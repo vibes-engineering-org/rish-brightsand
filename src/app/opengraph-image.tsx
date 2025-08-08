@@ -26,7 +26,7 @@ export default async function Image() {
           overflow: "hidden",
         }}
       >
-        {/* Background gradient with Farcaster purple and electric blue */}
+        {/* Golf course inspired background gradient */}
         <div
           style={{
             position: "absolute",
@@ -34,12 +34,12 @@ export default async function Image() {
             left: 0,
             right: 0,
             bottom: 0,
-            background: "linear-gradient(135deg, #8A63D2 0%, #1E90FF 100%)",
+            background: "linear-gradient(135deg, #2E8B57 0%, #228B22 50%, #32CD32 100%)",
             opacity: 0.9,
           }}
         />
 
-        {/* Subtle pattern overlay for depth */}
+        {/* Subtle golf course pattern overlay */}
         <div
           style={{
             position: "absolute",
@@ -48,7 +48,7 @@ export default async function Image() {
             right: 0,
             bottom: 0,
             backgroundImage:
-              "radial-gradient(circle at 20% 80%, rgba(138, 99, 210, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.4) 0%, transparent 50%)",
+              "radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 40%)",
           }}
         />
 
@@ -138,6 +138,63 @@ export default async function Image() {
             {PROJECT_TITLE}
           </h1>
 
+          {/* Golf ball icon */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "32px",
+            }}
+          >
+            <div
+              style={{
+                width: "48px",
+                height: "48px",
+                borderRadius: "50%",
+                background: "radial-gradient(circle at 30% 30%, #ffffff 0%, #e0e0e0 100%)",
+                border: "2px solid rgba(255, 255, 255, 0.8)",
+                boxShadow: "0 4px 16px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.5)",
+                position: "relative",
+              }}
+            >
+              {/* Golf ball dimples effect */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: "20%",
+                  left: "25%",
+                  width: "4px",
+                  height: "4px",
+                  borderRadius: "50%",
+                  background: "rgba(0, 0, 0, 0.1)",
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "40%",
+                  right: "25%",
+                  width: "3px",
+                  height: "3px",
+                  borderRadius: "50%",
+                  background: "rgba(0, 0, 0, 0.08)",
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: "30%",
+                  left: "35%",
+                  width: "3px",
+                  height: "3px",
+                  borderRadius: "50%",
+                  background: "rgba(0, 0, 0, 0.08)",
+                }}
+              />
+            </div>
+          </div>
+
           {/* Project description */}
           <p
             style={{
@@ -162,11 +219,11 @@ export default async function Image() {
               alignItems: "center",
               gap: "16px",
               padding: "20px 40px",
-              backgroundColor: "rgba(255, 255, 255, 0.2)",
+              backgroundColor: "rgba(255, 255, 255, 0.25)",
               borderRadius: "100px",
-              border: "3px solid rgba(255, 255, 255, 0.4)",
+              border: "3px solid rgba(255, 255, 255, 0.5)",
               backdropFilter: "blur(10px)",
-              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
+              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
             }}
           >
             {/* Farcaster icon */}
@@ -199,7 +256,7 @@ export default async function Image() {
           </div>
         </div>
 
-        {/* Bottom gradient fade for depth */}
+        {/* Bottom gradient fade for golf course depth */}
         <div
           style={{
             position: "absolute",
@@ -208,7 +265,7 @@ export default async function Image() {
             right: 0,
             height: "200px",
             background:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 100%)",
+              "linear-gradient(to top, rgba(0, 50, 0, 0.4) 0%, transparent 100%)",
           }}
         />
       </div>
